@@ -1,4 +1,4 @@
-pip==23.1
+pip
 sklearn
 pandas
 subprocess
