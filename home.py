@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import scikit-learn as sklearn
 
 
 df = pd.read_csv('./datasets/df_completo.csv')
