@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import sklearn
-
+import subprocess
+subprocess.run(['pip', 'install', '-r', 'requirements.txt'])
 df = pd.read_csv('./datasets/df_completo.csv')
 
 from sklearn.feature_extraction.text import TfidfVectorizer
