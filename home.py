@@ -1,12 +1,6 @@
-import numpy as pd
-import pandas as pd
-import matplotlib.pyplot as plt
-import time
-import seaborn as sns
-import re
-import math
-import plotly.express as px
 import streamlit as st
+import pandas as pd
+
 
 df = pd.read_csv('./datasets/df_completo.csv')
 
