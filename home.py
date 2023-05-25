@@ -1,7 +1,12 @@
-import streamlit as st
+import numpy as pd
 import pandas as pd
-import sklearn
-
+import matplotlib.pyplot as plt
+import time
+import seaborn as sns
+import re
+import math
+import plotly.express as px
+import streamlit as st
 
 df = pd.read_csv('./datasets/df_completo.csv')
 
@@ -32,7 +37,7 @@ def get_recomenation(title,cosine_sim=cosine_sim):
     return df['title'].iloc[movie_indices]
 
 
-selected_title = st.selectbox("Seleccione una película:", df["title"])
+selected_title = st.selectbox("Seleccione una película de las plataformas Netflix, Disney o Amazon(Los titulos estan en ingles):", df["title"])
 
 # ejecutar la función get_recommendation() para el título seleccionado
 recommendations = get_recomenation(selected_title)
