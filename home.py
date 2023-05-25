@@ -3,7 +3,6 @@ import pandas as pd
 import time
 import re
 import math
-import plotly.express as px
 import streamlit as st
 
 df = pd.read_csv('./datasets/df_completo.csv')
