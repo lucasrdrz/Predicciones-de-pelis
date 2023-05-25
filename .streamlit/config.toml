@@ -2,3 +2,4 @@
 base="dark"
 [server]
 headless = true
+port = 8501
